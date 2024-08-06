@@ -17,14 +17,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <head>
-        {(process.env.NODE_ENV === "development" || process.env.VERCEL_ENV === "preview") && (
-          // eslint-disable-next-line @next/next/no-sync-scripts
-          <script
-            data-project-id="bRPOIftC0cAktewhyEux2dWehyINGvOWg8OInhem"
-            data-is-production-environment="false"
-            src="https://snippet.meticulous.ai/v1/meticulous.js"
-          />
-        )}
+      {(process.env.NODE_ENV === "development" || process.env.VERCEL_ENV === "preview") && (
+    // eslint-disable-next-line @next/next/no-sync-scripts
+    <script
+      data-project-id="bRPOIftC0cAktewhyEux2dWehyINGvOWg8OInhem"
+      data-is-production-environment="false"
+      src="https://snippet.meticulous.ai/v1/meticulous.js"
+    />
+  )}
       </head>
       <body>
         <TRPCReactProvider>{children}</TRPCReactProvider>
