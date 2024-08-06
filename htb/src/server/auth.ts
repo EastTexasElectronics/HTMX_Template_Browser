@@ -1,3 +1,4 @@
+// htb/src/server/auth.ts
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import {
   getServerSession,

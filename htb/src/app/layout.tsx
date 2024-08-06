@@ -26,7 +26,7 @@ export default function RootLayout({
     />
   )}
       </head>
-      <body>
+      <body className="max-w-5xl mx-auto bg-gray-800 text-white">
         <TRPCReactProvider>{children}</TRPCReactProvider>
       </body>
     </html>
