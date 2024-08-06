@@ -1,1 +1,12 @@
-{}
+{
+    "extends": "next/core-web-vitals",
+    "plugins": ["prettier-plugin-tailwindcss"],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ]
+    }
+}
