@@ -12,10 +12,8 @@
 │   ├── README.txt
 │   └── project.json
 ├── README.md
-├── api
-│   └── render-template.go
 ├── bun.lockb
-├── file_tree_13-49-58.md
+├── file_tree_16-10-58.md
 ├── next-env.d.ts
 ├── next.config.js
 ├── package.json
@@ -27,6 +25,10 @@
 │   │   │   └── migration.sql
 │   │   ├── 20240806182100_
 │   │   │   └── migration.sql
+│   │   ├── 20240806203318_init
+│   │   │   └── migration.sql
+│   │   ├── 20240806205449_new
+│   │   │   └── migration.sql
 │   │   └── migration_lock.toml
 │   └── schema.prisma
 ├── public
@@ -36,24 +38,26 @@
 │   │   ├── (pages)
 │   │   │   └── Create-Component
 │   │   │       └── page.tsx
-│   │   ├── _components
-│   │   │   ├── HTMXCodeSandbox.tsx
-│   │   │   └── post.tsx
 │   │   ├── api
 │   │   │   ├── auth
 │   │   │   │   └── [...nextauth]
 │   │   │   │       └── route.ts
-│   │   │   ├── components
-│   │   │   │   └── route.ts
-│   │   │   └── trpc
-│   │   │       └── [trpc]
-│   │   │           └── route.ts
+│   │   │   └── components
+│   │   │       └── route.ts
 │   │   ├── layout.tsx
 │   │   └── page.tsx
-│   ├── constants
-│   │   └── categories.ts
+│   ├── components
+│   │   ├── ComponentForm.tsx
+│   │   ├── CreateComponentHeader.tsx
+│   │   ├── FeaturesSection.tsx
+│   │   ├── Footer.tsx
+│   │   ├── HTMXCodeSandbox.tsx
+│   │   ├── Header.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── Instructions.tsx
+│   │   ├── JoinCommunitySection.tsx
+│   │   └── PostingGuidelines.tsx
 │   ├── env.js
-│   ├── hooks
 │   ├── server
 │   │   ├── api
 │   │   │   ├── root.ts
@@ -64,10 +68,7 @@
 │   │   └── db.ts
 │   ├── styles
 │   │   └── globals.css
-│   └── trpc
-│       ├── query-client.ts
-│       ├── react.tsx
-│       └── server.ts
+│   └── utils
 ├── tailwind.config.ts
 └── tsconfig.json
 ```
